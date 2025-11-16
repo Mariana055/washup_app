@@ -1,2 +1,65 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+
+:root {
+  --ion-color-primary: #7fbfe9; /* azul claro do mockup */
+  --ion-color-primary-contrast: #fff;
+  --ion-color-secondary: #2f6fb5; /* azul escuro para botões */
+  --ion-color-light: #f2f6fb;
+  --ion-font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --border-radius: 12px;
+  --card-radius: 14px;
+  --padding-page: 18px;
+}
+
+/* Global layout tweaks */
+ion-app, ion-content {
+  background: linear-gradient(180deg, #eafdff 0%, #d8f0fb 100%);
+  font-family: var(--ion-font-family);
+}
+
+/* App header style */
+.app-header {
+  background: transparent;
+  text-align: center;
+  padding-top: 18px;
+}
+
+/* Circle logo style used in many screens */
+.circle-logo {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Primary CTA */
+.btn-primary {
+  --background: var(--ion-color-secondary);
+  --color: #fff;
+  border-radius: 10px;
+  height: 44px;
+  font-weight: 600;
+}
+
+/* Input style */
+.custom-input ion-input, .custom-input ion-select {
+  --padding-start: 12px;
+  --padding-end: 12px;
+}
+
+/* Bottom tabs custom */
+ion-tab-bar.custom-tabs {
+  --background: white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 64px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+}
+
+/* small helpers */
+.text-muted { color: #6b7280; font-size: 13px; }
+.small { font-size: 13px; }
