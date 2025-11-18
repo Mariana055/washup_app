@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-pontos',
+  standalone: true,
+  imports: [IonicModule],
   templateUrl: './pontos.page.html',
   styleUrls: ['./pontos.page.scss'],
 })
-export class PontosPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class PontosPage{}

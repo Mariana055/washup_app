@@ -1,37 +1,35 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+@import './theme/variables.scss';
 
-/* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+body {
+  font-family: var(--ion-font-family);
+  background: #F5F5F5;
+}
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+.app-logo {
+  display: block;
+  margin: 24px auto 8px;
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+}
 
-/* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+/* Botões principais */
+.btn-primary {
+  --background: linear-gradient(180deg, var(--ion-color-primary), var(--ion-color-secondary));
+  border-radius: var(--border-radius);
+  color: white;
+  --padding-start: 18px;
+  --padding-end: 18px;
+}
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+/* Card de máquina */
+.machine-card {
+  border-radius: 12px;
+  padding: var(--card-padding);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), #fff);
+}

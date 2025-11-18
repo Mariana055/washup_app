@@ -1,40 +1,9 @@
-.login-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-
-  .logo-container img {
-    width: 130px;
-    margin: 0 auto 20px;
-  }
-
-  .title {
-    color: #278ed1;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-
-  .input-item {
-    border: 1px solid #278ed1;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    --padding-start: 12px;
-  }
-
-  .btn-primary {
-    --background: #278ed1;
-    margin-top: 20px;
-    border-radius: 12px;
-    height: 48px;
-    font-size: 18px;
-  }
-
-  .link {
-    color: #278ed1;
-    font-size: 16px;
-    margin-top: 5px;
-  }
+:host {
+  --padding-top: 18px;
 }
+ion-item {
+  --background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+
