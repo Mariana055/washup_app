@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-textarea
+    placeholder="Descrição..."
+    [(ngModel)]="descricao">
+  </ion-textarea>
+
+  <ion-button expand="block" (click)="agendar()">Agendar</ion-button>
+</ion-content>

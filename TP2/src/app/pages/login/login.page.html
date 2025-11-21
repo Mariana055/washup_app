@@ -1,0 +1,45 @@
+<ion-content fullscreen class="ion-padding" style="--background:#7CC7ED;">
+  <img src="/assets/logo.png" alt="logo" class="app-logo">
+
+  <h1 class="titulo">Wash Up<span class="acento"><i><b>!</b></i></span></h1>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-input class="inputLogin" type="email" placeholder="Insira o email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-input class="inputLogin" type="password" placeholder="Insira a senha" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-primary" type="submit">Entrar</ion-button>
+  </form>
+
+  <div style="text-align:center;margin-top:12px;margin-bottom:50px;">
+    <ion-button fill="clear" size="small" (click)="goRecuperar()" class="recuperarConta">Não consegue acessar tua conta?</ion-button>
+  </div>
+  <ion-button expand="block" class="btn-secondary" type="submit">Criar conta</ion-button>
+</ion-content>
+
+<!--
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="perfil">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="config">
+      <ion-icon name="settings-outline"></ion-icon>
+      <ion-label>Config.</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+-->
+
+

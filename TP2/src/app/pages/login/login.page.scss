@@ -1,0 +1,55 @@
+:host {
+  --padding-top: 18px;
+}
+.app-logo{
+  width: 180px;   /* aumente ou diminua como quiser */
+  height: auto;   /* mantém proporção */
+  display: block;
+  margin: 40px auto 20px auto; 
+}
+.titulo{
+  text-align:center;
+  font-size: 50px;
+  color: #fff;
+  margin-top:8px;
+  margin-bottom: 50px;
+}
+.inputLogin{
+  height: 70px;
+}
+ion-item {
+  --background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  width: 70%;
+  margin: 0 auto 20px auto;
+}
+.acento{
+  color:#FF7EB9;
+}
+.btn-primary {
+  --background: #3B5998;
+  --border-radius: 20px;
+  --box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  width: 70%;
+  height: 50px;
+  margin: 0 auto 10px auto;
+}
+.btn-secondary {
+  --background: #fff; /* cor da sua escolha */
+  --color: black;         /* texto */
+  --border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  width: 70%;
+  height: 50px;
+  margin: 10px auto;
+}
+.recuperarConta{
+  color: #474747;
+  font-size: 10px;
+  height: 10px;
+}
+ion-tab-bar {
+  --background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+}

@@ -1,0 +1,40 @@
+<ion-content color="light" class="signup-page">
+
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Logo">
+    <h1>Wash Up!</h1>
+  </div>
+
+  <form>
+
+    <ion-item class="input-field">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-input type="text" placeholder="Nome completo"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-field">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-field">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-field">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder="Confirmar password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="signup-btn" routerLink="/sign-in">
+      Criar conta
+    </ion-button>
+
+  </form>
+
+  <div class="login-link">
+    <p>Já tens conta? <a routerLink="/sign-in">Entrar</a></p>
+  </div>
+
+</ion-content>

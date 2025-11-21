@@ -1,0 +1,35 @@
+@import './theme/variables.scss';
+
+body {
+  font-family: var(--ion-font-family);
+  background: #F5F5F5;
+}
+
+.app-logo {
+  display: block;
+  margin: 24px auto 8px;
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+}
+
+/* Botões principais */
+.btn-primary {
+  --background: linear-gradient(180deg, var(--ion-color-primary), var(--ion-color-secondary));
+  border-radius: var(--border-radius);
+  color: white;
+  --padding-start: 18px;
+  --padding-end: 18px;
+}
+
+/* Card de máquina */
+.machine-card {
+  border-radius: 12px;
+  padding: var(--card-padding);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), #fff);
+}
