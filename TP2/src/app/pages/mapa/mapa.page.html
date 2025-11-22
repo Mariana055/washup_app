@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>mapa</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-layout>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mapa</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <div class="mapa-wrapper">
+
+    <div class="top-logo">
+      <img src="assets/logo.png" alt="Logo" />
+      <h2>Wash Up!</h2>
+    </div>
+
+    <div class="map-container">
+      <div class="map-placeholder">
+        <span>[Mapa estático]</span>
+      </div>
+    </div>
+
+    <ion-button expand="block" class="btn-maquinas" routerLink="/maquinas">
+      VER MÁQUINAS
+    </ion-button>
+
+  </div>
+
+</app-layout>

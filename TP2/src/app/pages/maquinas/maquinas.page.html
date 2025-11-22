@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>maquinas</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-layout>
+  <div class="maquinas">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">maquinas</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+    <h3>Escolhe uma máquina</h3>
+
+    <ion-item lines="none" class="select-card">
+      <ion-select placeholder="Selecione a máquina" [(ngModel)]="selected">
+
+        <ion-select-option value="lav1">Lavadora 10Kg - n1</ion-select-option>
+        <ion-select-option value="sec1">Secadora 12Kg - n1</ion-select-option>
+        <ion-select-option value="lav2">Lavadora 8Kg - n2</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="block" (click)="abrirDetalhes()">
+      Selecionar
+    </ion-button>
+
+  </div>
+</app-layout>
+

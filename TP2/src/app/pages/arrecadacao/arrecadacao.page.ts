@@ -1,14 +1,12 @@
-// pontos page ts placeholder
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-
 import { CommonModule } from '@angular/common';
 import { AppLayoutComponent } from 'src/app/components/app-layout/app-layout.component';
 @Component({
-selector: 'app-pontos',
-templateUrl: './pontos.page.html',
-styleUrls: ['./pontos.page.scss'],
+selector: 'app-arrecadacao',
+templateUrl: './arrecadacao.page.html',
+styleUrls: ['./arrecadacao.page.scss'],
 standalone: true,
 imports: [IonicModule, CommonModule, AppLayoutComponent]
 })
-export class PontosPage {}
+export class ArrecadacaoPage {}

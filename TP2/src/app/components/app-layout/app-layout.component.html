@@ -1,0 +1,40 @@
+<div class="layout-wrapper">
+
+  <div class="header">
+    <img src="assets/logo.png" class="logo" alt="Wash Up logo" />
+    <h1>Wash Up!</h1>
+  </div>
+
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+
+  <ion-footer class="app-footer">
+    <ion-toolbar>
+      <ion-segment class="bottom-segment">
+
+        <ion-segment-button value="mapa" routerLink="/mapa">
+          <ion-icon name="map-outline"></ion-icon>
+          <div>Início</div>
+        </ion-segment-button>
+
+        <ion-segment-button value="maquinas" routerLink="/maquinas">
+          <ion-icon name="apps-outline"></ion-icon>
+          <div>Máquinas</div>
+        </ion-segment-button>
+
+        <ion-segment-button value="pontos" routerLink="/pontos">
+          <ion-icon name="star-outline"></ion-icon>
+          <div>Pontos</div>
+        </ion-segment-button>
+
+        <ion-segment-button value="perfil" routerLink="/perfil">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <div>Perfil</div>
+        </ion-segment-button>
+
+      </ion-segment>
+    </ion-toolbar>
+  </ion-footer>
+
+</div>

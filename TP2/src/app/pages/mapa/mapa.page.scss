@@ -1,0 +1,50 @@
+.mapa-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top-logo img {
+  width: 100px;
+  margin-bottom: 8px;
+}
+
+.top-logo h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #004f9a;
+  margin: 0 0 20px 0;
+}
+
+.map-container {
+  width: 100%;
+  background: white;
+  padding: 16px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map-placeholder {
+  height: 280px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder span {
+  opacity: 0.5;
+}
+
+.btn-maquinas {
+  --background: #5aa8ff;
+  --background-hover: #3f90e8;
+  --border-radius: 12px;
+  font-weight: 600;
+  padding: 14px;
+}
+

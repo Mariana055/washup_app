@@ -1,24 +1,32 @@
-<ion-content fullscreen class="ion-padding" style="--background:#E9F7FF;">
-  <img src="/assets/logo.png" alt="logo" class="app-logo">
+<app-layout>
+  <div class="login-container">
 
-  <h1 style="text-align:center;color:#0369A1;margin-top:8px;">Wash Up!</h1>
-  <p style="text-align:center;color:#1E6F93;margin-bottom:18px;">Lava. Seca. Pronto.</p>
+    <h2 class="welcome">Bem-vindo ao <span>Wash Up</span></h2>
 
-  <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <ion-item lines="none" class="ion-margin-bottom">
-      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+    <ion-item lines="none" class="input-box">
+      <ion-input
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="email">
+      </ion-input>
     </ion-item>
 
-    <ion-item lines="none" class="ion-margin-bottom">
-      <ion-input type="password" placeholder="Senha" formControlName="password"></ion-input>
+    <ion-item lines="none" class="input-box">
+      <ion-input
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password">
+      </ion-input>
     </ion-item>
 
-    <ion-button expand="block" class="btn-primary" type="submit">Entrar</ion-button>
-  </form>
+    <ion-button expand="block" class="btn-login" (click)="doLogin()">
+      Entrar
+    </ion-button>
 
-  <div style="text-align:center;margin-top:12px;">
-    <ion-button fill="clear" size="small" (click)="goRecuperar()">Esqueci a senha</ion-button>
+    <div class="actions">
+      <a routerLink="/recuperar">Recuperar conta</a>
+      <a class="create" routerLink="/registro">Criar conta</a>
+    </div>
+
   </div>
-</ion-content>
-
-
+</app-layout>

@@ -1,13 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<app-layout>
+<div class="profile-card">
+<div class="profile-head">
+<img src="assets/avatar.png" alt="avatar">
+<div>
+<h4>{{name}}</h4>
+<p>Pontos: <strong>{{points}}</strong></p>
+</div>
+</div>
+<h5>Histórico</h5>
+<ion-list>
+<ion-item>24/09 - Lavagem - 4,50€</ion-item>
+<ion-item>18/09 - Lavagem - 3,50€</ion-item>
+</ion-list>
+</div>
+</app-layout>

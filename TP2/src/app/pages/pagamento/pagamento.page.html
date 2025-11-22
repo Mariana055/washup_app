@@ -1,13 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>pagamento</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pagamento</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<app-layout>
+<div class="pay-card">
+<h3>Pagamento ({{method}})</h3>
+<ion-item lines="none" class="input-box"><ion-input placeholder="Número
+do cartão" [(ngModel)]="card"></ion-input></ion-item>
+<ion-item lines="none" class="input-box"><ion-input placeholder="MM/AA"
+[(ngModel)]="expiry"></ion-input></ion-item>
+<ion-item lines="none" class="input-box"><ion-input placeholder="CVC"
+[(ngModel)]="cvc"></ion-input></ion-item>
+<ion-button expand="block" (click)="pagar()">Pagar</ion-button>
+</div>
+</app-layout>

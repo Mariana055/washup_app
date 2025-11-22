@@ -1,14 +1,8 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Agendar</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="ion-padding">
-  <ion-textarea
-    placeholder="Descrição..."
-    [(ngModel)]="descricao">
-  </ion-textarea>
-
-  <ion-button expand="block" (click)="agendar()">Agendar</ion-button>
-</ion-content>
+<app-layout>
+<div class="agendar-card">
+<h3>Agendar utilização</h3>
+<ion-textarea placeholder="Observações / horário preferido" rows="5"
+[(ngModel)]="note"></ion-textarea>
+<ion-button expand="block" (click)="confirmar()">Confirmar</ion-button>
+</div>
+</app-layout>

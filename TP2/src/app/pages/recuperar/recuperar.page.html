@@ -1,28 +1,11 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Recuperar Conta</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="ion-padding">
-
-  <p>Introduza o seu email para recuperar a conta.</p>
-
-  <ion-item>
-    <ion-input 
-      type="email"
-      placeholder="Email"
-      [(ngModel)]="email">
-    </ion-input>
-  </ion-item>
-
-  <ion-button expand="block" (click)="enviar()">
-    Enviar
-  </ion-button>
-
-  <ion-button fill="clear" expand="block" routerLink="/login">
-    Voltar ao Login
-  </ion-button>
-
-</ion-content>
-
+<app-layout>
+<div class="recover">
+<h3>Recuperar conta</h3>
+<p>Introduce o teu email para recuperar a conta</p>
+<ion-item lines="none" class="input-box">
+<ion-input type="email" placeholder="email@exemplo.com"
+[(ngModel)]="email"></ion-input>
+</ion-item>
+<ion-button expand="block" (click)="enviar()">Enviar</ion-button>
+</div>
+</app-layout>
