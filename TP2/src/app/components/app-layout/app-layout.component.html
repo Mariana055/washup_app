@@ -2,7 +2,7 @@
 
   <div class="header">
     <img src="assets/logo.png" class="logo" alt="Wash Up logo" />
-    <h1>Wash Up!</h1>
+    <h1>Wash Up<i><span>!</span></i></h1>
   </div>
 
   <div class="content">
@@ -13,22 +13,22 @@
     <ion-toolbar>
       <ion-segment class="bottom-segment">
 
-        <ion-segment-button value="mapa" routerLink="/mapa">
+        <ion-segment-button value="mapa" (click)="navigate('/mapa')">
           <ion-icon name="map-outline"></ion-icon>
           <div>Início</div>
         </ion-segment-button>
 
-        <ion-segment-button value="maquinas" routerLink="/maquinas">
+        <ion-segment-button value="maquinas" (click)="navigate('/maquinas')">
           <ion-icon name="apps-outline"></ion-icon>
           <div>Máquinas</div>
         </ion-segment-button>
 
-        <ion-segment-button value="pontos" routerLink="/pontos">
+        <ion-segment-button value="pontos" (click)="navigate('/pontos')">
           <ion-icon name="star-outline"></ion-icon>
           <div>Pontos</div>
         </ion-segment-button>
 
-        <ion-segment-button value="perfil" routerLink="/perfil">
+        <ion-segment-button value="perfil" (click)="navigate('/perfil')">
           <ion-icon name="person-circle-outline"></ion-icon>
           <div>Perfil</div>
         </ion-segment-button>

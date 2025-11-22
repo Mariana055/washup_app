@@ -4,11 +4,12 @@ display:flex;
 flex-direction:column;
 gap:14px;
 margin-top: 6px;
+ background-color: #7CC7ED;
 .welcome { text-align:center; color: var(--washup-deep, #003366); span{
-color: var(--washup-accent, #ff61a3);} }
-.input-box { --background:#fff; border-radius: 12px; padding:6px 10px; }
-.btn-login { --background: var(--washup-button, #3f5a9a); color: #fff;
-border-radius: 12px; height:48px; }
+color: var(--washup-accent, #FF7EB9);} }
+.input-box { --background:#fff; width: 70%; margin: 0 auto; align-items: center; border-radius: 20px; padding:0 10px; }
+.btn-login { --background: var(--washup-button, #3f5a9a); color: #fff; width: 70%; margin: 0 auto;
+border-radius: 20px; height:48px; }
 .actions { display:flex; justify-content:space-between; font-size:14px;
 margin-top:6px; a{ color: var(--washup-deep);} }
 }

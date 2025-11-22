@@ -3,30 +3,22 @@
 
     <h2 class="welcome">Bem-vindo ao <span>Wash Up</span></h2>
 
-    <ion-item lines="none" class="input-box">
-      <ion-input
-        type="email"
-        placeholder="Email"
-        [(ngModel)]="email">
+    <ion-item lines="none" class="input-box"> 
+      <ion-input type="email" placeholder="Email" [(ngModel)]="email"> 
       </ion-input>
-    </ion-item>
-
-    <ion-item lines="none" class="input-box">
-      <ion-input
-        type="password"
-        placeholder="Password"
-        [(ngModel)]="password">
-      </ion-input>
-    </ion-item>
+    </ion-item> 
+    <ion-item lines="none" class="input-box"> 
+      <ion-input type="password" placeholder="Password" [(ngModel)]="password"> 
+    </ion-input> </ion-item>
 
     <ion-button expand="block" class="btn-login" (click)="doLogin()">
       Entrar
     </ion-button>
 
-    <div class="actions">
-      <a routerLink="/recuperar">Recuperar conta</a>
-      <a class="create" routerLink="/registro">Criar conta</a>
-    </div>
+  <div class="actions">
+    <ion-button fill="clear" (click)="goToRecuperar()">Recuperar conta</ion-button>
+    <ion-button fill="outline" (click)="goToRegistro()">Criar conta</ion-button>
+  </div>
 
   </div>
 </app-layout>
