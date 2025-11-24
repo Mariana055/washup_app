@@ -21,6 +21,11 @@ const routes: Routes = [
     loadComponent: () =>
       import('./pages/recuperar/recuperar.page').then(m => m.RecuperarPage)
   },
+  {
+    path: 'cadastro',
+    loadComponent: () =>
+      import('./pages/cadastro/cadastro.page').then(m => m.CadastroPage)
+  },
 
   // -----------------------------------
   // SECURE (após login)
@@ -49,14 +54,12 @@ const routes: Routes = [
     path: 'perfil',
     loadComponent: () =>
       import('./pages/perfil/perfil.page').then(m => m.PerfilPage)
-  },
-
+  }
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}
-
